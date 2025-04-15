@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ImageLoaderUI() {
-    
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -44,7 +44,7 @@ fun ImageLoaderUI() {
     ) {
         Text("Local Asset Image")
         Image(
-            painter = painterResource(id = R.drawable.example),
+            painter = painterResource(id = R.drawable.ex2),
             contentDescription = "Local Asset",
             contentScale = ContentScale.Crop,
             modifier = Modifier
@@ -54,7 +54,7 @@ fun ImageLoaderUI() {
 
         Text("Image from URL")
         AsyncImage(
-            model = "https://fastly.picsum.photos/id/590/600/300.jpg?hmac=zrrBzuS9qoBMlytnAadZMMHzioryaaidczYdVVmf764",
+            model = "https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg",
             contentDescription = "Network Image",
             contentScale = ContentScale.Crop,
             modifier = Modifier
